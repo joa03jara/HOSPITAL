@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    background: rgb(230, 230, 230);
+    color: #222;
+}   
+
+/* ////////////////////////////// */
+/* ROOT ("Body") */
+:root {
+    display: flex;
+    position: relative;
+}
+
+/* ////////////////////////////// */
+/* SECCIONES (Header) */
+header {
+    display: flex;
+    position: fixed;
+    height: 150px; width: 100vw;
+    background: rgba(230, 230, 230);
+    border-radius: 0 0 50% 50%;
+    z-index: 2;
+    flex-wrap: wrap;
+    opacity: .9;
+}
+.imgLogo {
+    width: 130px;
+    position: absolute;
+    left: 250px; top: -5px;
+    transition: .4s;    
+    background: none;
+}
+.lista-navegacion {
+    display: flex;
+    position: absolute;
+    left: 490px; bottom: 75px; 
+    background: none;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    margin: 5px 10px 5px 10px;
+    background: none;
+}
+.a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .3s;
+    font-weight: bold;
+    background: none;
+}
+.a:hover {
+    text-decoration: underline;
+    color: rgb(0, 109, 172);
+    font-weight: bold;
+}
+.btnSecciones {
+    display: flex;
+    position: absolute;
+    left: 530px; top: -2px;
+    font-size: 16px;
+    padding: 15px 25px 15px 25px;
+    background: rgb(0, 109, 172);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+.btnSecciones:hover {
+    background: rgb(0, 81, 128);
+}
+
+/* ////////////////////////////// */
+/* CUERPO (Body) */
+.divCuerpo {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    top: 150px;
+    z-index: 1;
+    flex-wrap: wrap;
+    border-radius: 50px; 
+    height: 100vh; min-width: 100vw;
+    background: none;
+}
+.h3Cuerpo {
+    display: flex;
+    position: absolute;
+    top: 110px; left: 100px;
+    font-weight: 600;
+    background: none;
+}
+.h1Cuerpo {
+    display: flex;
+    position: absolute;
+    top: 150px; left: 100px;
+    background: none;
+    font-size: 75px;
+}
+/*.imgCuerpo {
+    width: 100vw;
+    z-index: 0;
+}*/
+
+/* ////////////////////////////// */
+/* ESPECIALIDADES (Body) */
+.divEspecialidades {
+    display: flex;
+    position: relative;
+    top: 350px;
+    z-index: 1;
+    background: rgb(230, 230, 230);
+    width: 100vw; height: 350px;
+    justify-content: center;
+    flex-flow: wrap;
+    /*border: 5px solid #000;*/
+    border-radius: 50px;
+    /*border-bottom: 5px double rgba(3,3,3,.1);*/
+    opacity: .9;
+}
+h2 {
+    background: none;
+    margin: 20px auto;
+    font-size: 40px;
+    text-decoration: underline rgb(0, 109, 172);
+}
+.divM1 {
+    display: flex;
+    position: absolute;
+    top: 130px; left: 150px;
+    width: 300px; height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .3s;
+    border: 1px solid rgba(0, 47, 75, 1);
+    border-radius: 15px;
+}
+.divM1:hover {
+    background: rgba(0, 103, 172, 0.5);
+    font-size: 23px;
+}
+.divM2 {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    width: 300px; height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .3s;
+    border: 1px solid rgba(0, 47, 75, 1);
+    border-radius: 15px;
+}
+.divM2:hover {
+    background: rgba(0, 109, 172, .5);
+    font-size: 23px;
+}
+.divM3 {
+    display: flex;
+    position: absolute;
+    top: 130px; right: 150px;
+    width: 300px; height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .3s;
+    border: 1px solid rgba(0, 47, 75, 1);
+    border-radius: 15px;
+}
+.divM3:hover {
+    background: rgba(0, 109, 172, .5);
+    font-size: 23px;
+}
+.imgEspecialidades {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    top: 150px;
+}
+
+/* ////////////////////////////// */
+/* TURNOS (Body) */
+.divTurnos {
+    display: flex;
+    position: relative;
+    width: 100vw; height: 62.5vh;
+    flex-wrap: wrap;
+    background: rgb(230, 230, 230);
+    z-index: 1;
+    justify-content: center;
+    top: 300px;
+    opacity: .9;
+    border-radius: 50px;
+}
+.divTurnos h2 {
+    display: flex;
+    position: absolute;
+    top: -10px;
+}
+.divForms {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 90vw; height: 300px;
+    background: none;
+}
+form {
+    display: flex;
+    position: absolute;
+    width: 90vw;
+    border: 1px solid #000;
+    background: none;
+}
+.h3_f1 {
+    display: flex;
+    position: absolute;
+    left: 0; top: 70px;
+    font-size: 30px;
+    background: none;
+}
+.f1 {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.f1_s1 {
+    display: flex;
+    position: absolute;
+    top: 0; left: 10px;
+    margin: 10px auto;
+    padding: 20px 50px 20px 50px;
+    width: 350px;
+    border: 2px solid #333;
+}
+.f1_s2 {
+    display: flex;
+    position: absolute;
+    top: 0; 
+    margin: 10px auto;
+    padding: 20px 50px 20px 50px;
+    width: 350px;
+    border: 2px solid #333;
+}
+.f1_input {
+    display: flex;
+    position: absolute;
+    top: 0; right: 10px;
+    margin: 10px auto;
+    padding: 20px 50px 20px 50px;
+    width: 350px;
+    justify-content: center;
+    border: 2px solid #333;
+}
+.h3_f2 {
+    display: flex;
+    position: absolute;
+    left: 0; top: 200px;
+    font-size: 30px;
+    background: none;
+}
+.f2 {
+    display: flex;
+    position: absolute;
+    bottom: 47px;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.f2_input {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin: 10px auto;
+    padding: 10px 20px 10px 20px;
+    width: 215px; 
+}
+.f2_ip1 {
+    display: flex;
+    position: absolute;
+    right: 1007px; 
+}
+.f2_ip2 {
+    display: flex;
+    position: absolute;
+    right: 760px;
+}
+.f2_ip3 {
+    display: flex;
+    position: absolute;
+    right: 507px;
+}
+.f2_ip4 {
+    display: flex;
+    position: absolute;
+    right: 260px;
+}
+.f2_ip5 {
+    display: flex;
+    position: absolute;
+    top: 0; right: 10px;
+}
+.btnTurno {
+    display: flex;
+    position: absolute;
+    bottom: -85px; left: 490px;
+    padding: 20px 50px 20px 50px;
+    font-size: 16px;
+    background: rgb(0, 109, 172);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ddd;
+}
+.btnTurno:hover {
+    background: rgb(0, 81, 128);
+}
+.imgTurnos {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    top: 150px;
+    width: 100vw;
+}
+.btnVerTurno {
+    display: flex;
+    position: absolute;
+    bottom: -85px;; right: 175px; 
+    padding: 20px 50px 20px 50px;
+    font-size: 16px;
+    background: rgb(0, 109, 172);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ddd;
+}
+.btnVerTurno:hover {
+    background: rgb(0, 81, 128);
+}
+.btnActuTurno {
+    display: flex;
+    position: absolute;
+    bottom: -85px; right: 850px; 
+    padding: 20px 50px 20px 50px;
+    font-size: 16px;
+    background: rgb(0, 109, 172);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ddd;
+}
+.btnActuTurno:hover {
+    background: rgb(0, 81, 128);
+}
+
+/* ////////////////////////////// */
+/* CONTACTO (Body) */
+.divContainer {
+    display: flex;
+    position: relative;
+    /*border: 4px solid #000;*/
+    width: 100vw; height: 600px;
+    z-index: 1;
+    top: 255px;
+    opacity: 0.9;
+    border-radius: 50px;
+}
+.divContacto {
+    display: flex;
+    position: absolute;
+    width: 50vw; height: 500px;
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    /*border-radius: 50px 0 0 50px;
+    border: 2px solid #000;*/
+    text-align: center;
+}
+.imgContacto {
+    display: flex;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 75px; left: 30px;
+    background: none;
+}
+.imgEmail {
+    top: 175px;
+}
+.imgTelefono {
+    top: 275px;
+}
+.imgWhatsapp {
+    top: 375px
+}
+.h2Main {
+    display: flex;
+    position: absolute;
+    left: 575px; top: -10px;
+}
+.h2Contacto {
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    top: 60px; left: 100px;
+    background: none;
+    margin: 20px auto;
+}
+.h2Email {
+    top: 155px;
+}
+.h2Telefono {
+    top: 260px;
+}
+.h2Whatsapp {
+    top: 360px
+}
+.pContacto {
+    display: flex;
+    position: absolute;
+    top: 90px; left: 275px;
+    background: none;
+    font-size: 20px;
+}
+.pEmail {
+    top: 183px; left: 220px;
+}
+.pTelefono {
+    top: 290px; left: 265px;
+}
+.pWhatsapp {
+    top: 390px; left: 290px;
+}
+.formContacto {
+    display: flex;
+    position: absolute;
+    top: 75px; right: 20px;
+    width: 50vw; height: 500px;
+    /*border-radius: 0 50px 50px 0;
+    border: 2px solid #000;*/
+    background: none;
+    border: none;
+}
+.formContacto input {
+    display: flex;
+    position: absolute;
+    margin: 10px auto;
+    padding: 10px 25px;
+    width: 350px; height: 70px;
+    justify-content: center;
+    border: 2px solid #333;
+}
+.formContacto .Nombre {
+    display: flex;
+    position: absolute;
+    top: 20px; left: 25px;
+    width: 300px;
+}
+.formContacto .Apellido {
+    display: flex;
+    position: absolute;
+    top: 20px; right: 25px;
+    width: 300px;
+}
+.formContacto .Email {
+    display: flex;
+    position: absolute;
+    top: 110px; left: 25px;
+    width: 633.5px;
+}
+.formContacto textarea {
+    display: flex;
+    position: absolute;
+    margin: 10px auto;
+    padding: 10px 25px;
+    width: 633.5px; height: 170px;
+    justify-content: center;
+    border: 2px solid #333;
+    top: 203px; left: 25px;
+}
+.formContacto button {
+    display: flex;
+    position: absolute;
+    margin: 10px auto;
+    padding: 20px 50px;
+    font-size: 16px;
+    background: rgb(0, 109, 172);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    color: #ddd;
+    bottom: 10px; left: 230px;
+}
+.imgFondoContacto {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    top: 150px;
+    width: 100vw;
+}
+
+/* ////////////////////////////// */
+/* FOOTER (Footer) */
+.divFooter {
+    display: flex;
+    position: fixed; 
+    /*border: 4px solid #000;*/
+    width: 100vw; height: 75px;
+    z-index: 1;
+    bottom: 0;
+    border-radius: 50% 50% 0 0 ;
+    background: rgba(230, 230, 230, .9);
+    justify-content: center;
+}
+.pFooter {
+    display: flex;
+    position: absolute;
+    background: none;
+    bottom: 10px; 
+    font-size: 20px;
+}
+.imgFooter {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    width: 100vw;
+    z-index: 0;
+}
